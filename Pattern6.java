@@ -50,7 +50,36 @@ public class Pattern6 {
             
         }
 
-        
+        System.out.println();
+
+        // Nested loop
+
+        int a =1;
+        int b=1;
+        int c;
+
+        while (b<=5) {
+            while (a <=5) {
+
+                if (b<=3) {
+                c = b - 1;
+
+                if (a >= (3-c) && a <= (3+c)) System.out.print("+ ");
+                else System.out.print("  ");
+
+                } else {
+                    c = b - 5;
+
+                    if (a >= (3+c) && a <= (3-c)) System.out.print("+ ");
+                    else System.out.print("  ");
+                }
+
+                a++;  
+            }
+            b++;
+            System.out.println();
+            a=1;
+        }
 
 
     }
