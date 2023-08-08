@@ -38,8 +38,27 @@ public class Pattern1 {
             x++;
         }
 
+        System.out.println();
+        System.out.println();
+
         // Nested loop
 
+        int b = 1;
+
+        while (b <= 9) {
+            int a = 1;
+            while (a <= 5) {
+
+                System.out.print("+ ");
+
+                if ( a == Math.abs(5-b)+1) {
+                    System.out.println();
+                    break;
+                }
+                a++;
+            }
+            b++;
+        }
 
 
 
