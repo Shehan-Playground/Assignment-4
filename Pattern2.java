@@ -42,11 +42,35 @@ public class Pattern2 {
             }
             
         }
-        
+
+        System.out.println();
 
         // Nested loop
-        
 
+        int a =1;
+        int b=1;
+        int c;
+
+        while (b<=4) {
+            while (a <=7) {
+                if (b!=1) {
+
+                    c = b - 2;
+
+                    if (a >= (4-c) && a <= (4+c)) System.out.print("  ");
+
+                    else System.out.print("+ ");
+                        
+
+                } else System.out.print("+ ");
+
+                a++;
+                
+            }
+            b++;
+            System.out.println();
+            a=1;
+        }
 
     }
 }
