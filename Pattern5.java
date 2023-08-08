@@ -51,7 +51,42 @@ public class Pattern5 {
 
         System.out.println();
 
+        // Single loop
 
+        int x=1;
+        int y=1;
+        int z;
+
+        while (y<=5) {
+
+            if (y%2==0) {
+
+                if (y<=3) {
+                    z = y - 1;
+
+                    if (x == (3-z)) System.out.print("/ ");
+                    else if (x == (3+z)) System.out.print("\\ ");
+                    else System.out.print("+ ");
+
+                } else {
+                    z = y - 5;
+
+                    if (x == (3+z)) System.out.print("\\ ");
+                    else if (x == (3-z)) System.out.print("/ ");
+                    else System.out.print("+ ");
+                }
+                
+            } else System.out.print("+ ");
+            
+            x++;
+
+            if (x>5) {
+                x=1;
+                System.out.println();
+                y++;
+            }
+            
+        }
 
 
     }
